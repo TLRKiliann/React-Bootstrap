@@ -1,0 +1,13 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background: steelblue;
+  color: whitesmoke;
+}
+
+.App {
+  text-align: center;
+}
