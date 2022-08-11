@@ -1,2 +1,3 @@
 # React-Bootstrap
-Just to learn about Bootstrap
+
+Simple Carousel with Bootstrap & CSS
