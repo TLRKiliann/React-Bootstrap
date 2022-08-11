@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import FirstComponent from './Components/FirstComponent';
+import ThirdComponent from './Components/ThirdComponent';
+import FourthComponent from './Components/FourthComponent';
 import { Button } from 'react-bootstrap';
 import './App.css';
 
@@ -12,8 +14,8 @@ const App = () => {
   const handleAdd = (e) => {
     e.preventDefault();
     if (name) {
-      setNames([...names, {id: Date.now, name: name, isDone: false}])
-      setName('')
+      setNames([...names, { id: new Date().getTime(), name: name, isDone: false }]);
+      setName('');
     }
   };
 
@@ -21,9 +23,10 @@ const App = () => {
     <div className="App">
       <h1>React - Bootstrap</h1>
       <input type='text' value={name} onChange={(e) => setName(e.target.value)} />
-      <input type='checkbox' />
       <Button onClick={handleAdd}>Button Bootstrap</Button>
-      <FirstComponent />
+      <FirstComponent names={names} setNames={setNames} />
+      <ThirdComponent />
+      <FourthComponent />
     </div>
   );
 }
