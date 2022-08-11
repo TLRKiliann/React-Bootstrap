@@ -1,14 +1,2 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+/*@import 'bootstrap/dist/css/bootstrap.min.css';*/
 
-body {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  height: 330vh;
-  background: steelblue;
-  color: whitesmoke;
-}
-
-.App {
-  text-align: center;
-}
